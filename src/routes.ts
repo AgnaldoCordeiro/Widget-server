@@ -17,18 +17,8 @@ routes.post('/feedbacks', async (req, res) => {
     comment,
     screenshot,
   })  
-
   
   return res.status(201).send()
-})
-routes.get('/', async (req, res) => {
- 
-  const prismaFeedbackRepository = new PrismaFeedbackRepository()
-
-   
-console.log(prismaFeedbackRepository)
-  
-  return res.json(prismaFeedbackRepository)
 })
 
  
