@@ -1,7 +1,7 @@
 import { MailAdapter, SendMailData } from '../mail-adapters'
 import nodemailer from 'nodemailer'
 
-const transport = nodemailer.createTransport("SMTP",{
+const transport = nodemailer.createTransport({
   service: "Gmail", 
   host: 'smtp.gmail.com',
   auth: {
