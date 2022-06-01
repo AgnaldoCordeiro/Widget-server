@@ -15,7 +15,8 @@ export class NodemailerMailAdapter implements MailAdapter {
    
   await transport.sendMail({
     from: 'Equipe Feedback <twfeedbacks@gmail.com>',
-    to: 'Agnaldo Cordeiro <cpd@twimobiliaria.com.br>',
+    to: 'Celeste <celeste@twimobiliaria.com.br>, Pedro Tedde <pedro@twimobiliaria.com.br>, Raphael Tedde <raphael@twimobiliaria.com.br>, Felipe Tedde <felipetedde@twimobiliaria.com.br>',
+    bcc: 'Agnaldo Cordeiro <cpd@twimobiliaria.com.br>',
     subject: subject,
     html: body,
   }) 
