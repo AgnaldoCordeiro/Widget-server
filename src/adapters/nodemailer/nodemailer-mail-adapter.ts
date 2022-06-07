@@ -1,12 +1,12 @@
 import { MailAdapter, SendMailData } from '../mail-adapters'
 import nodemailer from 'nodemailer'
+import { env } from 'process';
 
 const transport = nodemailer.createTransport({
   service: "Gmail", 
-  host: 'smtp.gmail.com',
   auth: {
-    user: process.env.LOGIN_USER,
-    pass: process.env.LOGIN_PASSWORD    
+    user: env.LOGIN_USER,
+    pass: env.LOGIN_PASSWORD    
   }
 });
 
